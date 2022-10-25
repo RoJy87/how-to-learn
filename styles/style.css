@@ -9,17 +9,189 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*Общие модификаторы*/
+
+.flex-col_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bground_color_black {
+  background-color: #1f1f1f;
+}
+
+.bground_color_grey {
+  background-color: #f2f2f2;
+}
+
+.link_style {
+  text-decoration: none;
+}
+
+.text_color_blue {
+  color: #2f80ed;
+}
+
+.text_color_black {
+  color: #000;
+}
+
+.layer_top {
+  z-index: 2;
+}
+
+/*Блок header*/
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  margin-left: 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.header__subtitle_link {
+  margin-left: 5px;
+  padding-right: 15px;
+}
+
+/* Костыль надо узнать как правильно сделать */
+.header__subtitle_link::after {
+  content: ' →';
+}
+
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 765px;
+  height: 608px;
+}
+
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+}
+
+/*блок description*/
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+  margin: 100px auto 0;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+/*блок digits:*/
+
+.digits__title {
+  width: 60%;
+  margin: 100px auto 0 ;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.digits__subtitle {
+  width: 60%;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 100px;
+  width: 1100px;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin: 0;
+}
+
+.table__text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
 }
 
 /* и элемента с модификатором вида ключ-значение */

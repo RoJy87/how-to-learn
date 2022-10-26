@@ -3,66 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Научиться учиться</title>
   </head>
   <body>
     <div class="page">
-      <header class="header flex-col_container bground_color_grey">
+      <!-- Блок header -->
+
+      <header class="header flex-col_container">
         <img
-          src="/images/logo_place_header.svg"
+          src="images/logo_place_header.svg"
           alt="Логотип Яндекс Практикум"
           class="logo logo_place_header"
         />
         <h1 class="header__title layer_top">Научиться учиться</h1>
-        <p class="header__subtitle layer_top">
+        <p class="header__subtitle layer_top font_size_s">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?<a
             href="#"
             class="header__subtitle_link link_style text_color_blue"
-            >Узнать</a
+            >Узнать &rarr;</a
           >
         </p>
         <img
-          src="/images/header-image.png"
+          src="images/header-image.png"
           alt="Иллюстрация Опять двойка"
           class="header__main-illustration"
         />
         <div class="header__square-pic"></div>
       </header>
 
+      <!-- Главный блок content -->
+
       <main class="content">
-        <section class="content__description flex-row_container">
-          <article class="two-columns">
-            <h2 class="two-columns__brief text_color_blue">
+        <article class="content__description flex-row_container">
+          <div class="two-columns">
+            <h2 class="two-columns__brief text_color_blue font_size_s">
               Главные проблемы в обучении
             </h2>
             <div class="two-columns__main-text">
-              <p class="two-columns__paragraph">
+              <p class="two-columns__paragraph font_size_m">
                 Ни в школе, ни в институте нас не учат тому, как правильно
                 изучать материал. Мы готовимся к экзаменам и учим билеты. Мы
                 тренируемся решать однообразные задачи, чтобы лучше сдать тест,
                 но часто в итоге это не дает нам реального знания. Зубрежка
                 быстро выветривается и не приносит пользы.
               </p>
-              <p class="two-columns__paragraph">
-                <span class="two-columns__span-accent">Вывод:</span> учиться
-                тоже нужно уметь, но почему-то этому мало где учат. Что с этим
-                делать?
+              <p class="two-columns__paragraph font_size_m">
+                <span class="two-columns__span-accent font_size_m">Вывод:</span>
+                учиться тоже нужно уметь, но почему-то этому мало где учат. Что
+                с этим делать?
               </p>
-              <p class="two-columns__paragraph">
+              <p class="two-columns__paragraph font_size_m">
                 Конкретные техники и упражнения помогают изменить подход к
                 обучению, сделать его эффективным и захватывающим. Эти же
                 техники применяются на примере обучения в Практикуме.
               </p>
             </div>
-          </article>
-        </section>
+          </div>
+        </article>
 
-        <section class="digits flex-col_container">
-          <h2 class="digits__title digits__title_theme_light">Цифры и факты</h2>
-          <h3 class="digits__subtitle digits__subtitle_theme_light">
+        <!-- Блок digits -->
+
+        <section class="digits">
+          <h2 class="section-title section-title_theme_light">Цифры и факты</h2>
+          <h3 class="section-subtitle section-subtitle_theme_light font_size_m">
             Про учёбу и мозг
           </h3>
           <div class="table table__theme_light">
@@ -139,11 +145,160 @@
           </div>
         </section>
 
-        <section class="content__feynman"></section>
-        <section class="content__kaufman"></section>
+        <!-- Блок feynman -->
+
+        <section class="feynman">
+          <h2 class="feynman__tittle">Метод Фейнмана</h2>
+          <h3 class="feynman__subtittle font_size_l">Выучить и не забыть.</h3>
+          <a
+            href="#"
+            class="feynman__link link_style text_color_blue font_size_l"
+            >Подробнее &rarr;</a
+          >
+        </section>
+
+        <!-- Блок kaufman -->
+
+        <section class="kaufman">
+          <h2 class="section-title section-title_theme_dark">
+            Принципы обучения
+          </h2>
+          <h3 class="section-subtitle section-subtitle_theme_dark font_size_m">
+            от Джоша Кауфмана
+          </h3>
+          <div class="table table__theme_dark">
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">1</h4>
+              <p class="table__text table__text_theme_dark">
+                Выберите привлекательный проект.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">2</h4>
+              <p class="table__text table__text_theme_dark">
+                Сосредоточьтесь на каком-то одном навыке.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">3</h4>
+              <p class="table__text table__text_theme_dark">
+                Определите целевой уровень мастерства.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">4</h4>
+              <p class="table__text table__text_theme_dark">
+                Разбейте навык на элементы.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">5</h4>
+              <p class="table__text table__text_theme_dark">
+                Приготовьте всё необходимое для занятий.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">6</h4>
+              <p class="table__text table__text_theme_dark">
+                Устраните препятствия для занятий.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">7</h4>
+              <p class="table__text table__text_theme_dark">
+                Выделите специальное время для занятий.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">8</h4>
+              <p class="table__text table__text_theme_dark">
+                Создайте быстрые петли обратной связи.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">9</h4>
+              <p class="table__text table__text_theme_dark">
+                Занимайтесь по расписанию, короткими интенсивными интервалами.
+              </p>
+            </article>
+            <article class="table__cell table__cell_theme_dark">
+              <h4 class="table__heading table__heading_theme_dark">10</h4>
+              <p class="table__text table__text_theme_dark">
+                Уделяйте внимание количеству и скорости.
+              </p>
+            </article>
+            <img
+              src="images/kaufman-triangle.svg"
+              alt="Фоновая картинка в виде треугольника"
+              class="kaufman__triangle"
+            />
+          </div>
+        </section>
       </main>
 
-      <footer class="footer"></footer>
+      <!-- Блок footer -->
+
+      <footer class="footer">
+        <div class="footer__columns">
+          <div class="column_content_copyright flex-col_container">
+            <img
+              src="images/logo_place_footer.svg"
+              alt="Логотип Яндекс Практикум"
+              class="logo logo_place_footer"
+            />
+            <p class="footer__author font_size_s">&copy; Симонов Данил</p>
+          </div>
+          <div class="footer__column_content_info flex-col_container">
+            <h2 class="footer__column-heading font_size_s">О Практикуме</h2>
+            <nav class="footer__column-links flex-col_container">
+              <a href="" class="footer__column-link link_style font_size_s"
+                >Главная</a
+              >
+              <a href="" class="footer__column-link link_style font_size_s"
+                >Концепция</a
+              >
+              <a href="" class="footer__column-link link_style font_size_s"
+                >Наставники</a
+              >
+            </nav>
+          </div>
+          <div class="footer__column_content_social flex-col_container">
+            <h2 class="footer__column-heading">Соцсети</h2>
+            <nav class="footer__column-links flex-col_container">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__column-link link_style font_size_s"
+                ><img
+                  src="images/youtube-icon.svg"
+                  alt="Иконка YouTube"
+                  class="footer__social-icon"
+                />YouTube</a
+              >
+              <a
+                href="https://vk.com/"
+                target="_blank"
+                class="footer__column-link link_style font_size_s"
+                ><img
+                  src="images/vk_color_white.svg"
+                  alt="Иконка Вконтакте"
+                  class="footer__social-icon"
+                />ВКонтакте</a
+              >
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                class="footer__column-link link_style font_size_s"
+                ><img
+                  src="images/tiktok-icon.svg"
+                  alt="Иконка ТикТок"
+                  class="footer__social-icon"
+                />TikTok</a
+              >
+            </nav>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

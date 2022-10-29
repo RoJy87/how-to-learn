@@ -204,6 +204,8 @@
 /* блок feynman */
 
 .feynman {
+  box-sizing: border-box;
+  padding-top: 100px;
   position: relative;
   min-height: 890px;
   background: no-repeat url("../images/feynman.png") left bottom #f2f2f2;
@@ -215,7 +217,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
-  margin: 100px auto 0;
+  margin: auto;
   text-align: center;
 }
 

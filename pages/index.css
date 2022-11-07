@@ -1,14 +1,18 @@
+/* normalize */
+
+@import url("../vendor/normalize.css");
+
 /* блок page */
 
 @import url("../blocks/page/page.css");
 
-/* блок page */
+/* блок link */
 
 @import url("../blocks/link/link.css");
 
-/* rotation */
+/* блок rotation */
 
-@import url("../blocks/rotation/rotation_el_around.css");
+@import url("../blocks/rotation/rotation.css");
 
 /* блок header */
 

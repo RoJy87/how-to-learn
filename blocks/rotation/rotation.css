@@ -7,6 +7,6 @@
   }
 }
 
-.rotation_el_around {
+.rotation {
   animation: rotation 20s linear infinite;
 }

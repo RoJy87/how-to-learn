@@ -1,0 +1,19 @@
+.comments__open-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(90, 111, 139);
+  background-color: darkslategray;
+  color: azure;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  transition: scale 0.7s linear 0.1s;
+}
+
+.comments__open-button:hover {
+  scale: 1.1;
+  background-color: rgb(89, 117, 117);
+}

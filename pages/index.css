@@ -102,6 +102,18 @@
 @import url("../blocks/resources/__link/resources__link.css");
 @import url("../blocks/resources/__logo/resources__logo.css");
 
+/* блок comments */
+
+@import url("../blocks/active-form/active-form.css");
+@import url("../blocks/comments/comments.css");
+@import url("../blocks/comments/__wrapper/comments__wrapper.css");
+@import url("../blocks/comments/__open-button/comments__open-button.css");
+@import url("../blocks/comments/__form/comments__form.css");
+@import url("../blocks/comments/__input/comments__input.css");
+@import url("../blocks/comments/__send/comments__send.css");
+@import url("../blocks/comments/__reset/comments__reset.css");
+
+
 /* блок footer */
 
 @import url("../blocks/footer/footer.css");
@@ -113,3 +125,9 @@
 @import url("../blocks/footer/__column-links/footer__column-links.css");
 @import url("../blocks/footer/__column-link/footer__column-link.css");
 @import url("../blocks/footer/__social-icon/footer__social-icon.css");
+
+
+
+
+
+

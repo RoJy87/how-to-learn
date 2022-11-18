@@ -1,0 +1,16 @@
+.comments__send {
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(90, 111, 139);
+  background-color: darkslategray;
+  color: azure;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  transition: scale 0.7s linear;
+}
+.comments__send:hover {
+  scale: 1.1;
+  background-color: rgb(89, 117, 117);
+}

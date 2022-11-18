@@ -387,6 +387,30 @@
         </section>
       </main>
 
+      <!-- Блок comments -->
+
+      <section class="comments">
+        <button type="button" class="comments__open-button">
+          Открыть комментарии
+        </button>
+        <div class="comments__wrapper">
+          <form action="" class="comments__form" method="post">
+            <label for="comment"></label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="comments__input"
+              placeholder="Ваш комметарий"
+              autofocus
+            ></textarea>
+            <div class="comments__nav">
+              <button type="submit" class="comments__send">Отправить</button>
+              <button type="reset" class="comments__reset">Сбросить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
       <!-- Блок footer -->
 
       <footer class="footer">
@@ -461,5 +485,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>
